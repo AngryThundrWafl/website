@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { browserHistory } from 'react-router';
+//import { browserHistory } from 'react-router';
 
 class Home extends Component{
-  componentDidMount() {
-   browserHistory.push('/');
- }
- 
+  //componentDidMount() {
+   //browserHistory.push('/');
+  //}
+
  render() {
    return (
      <div id="home">

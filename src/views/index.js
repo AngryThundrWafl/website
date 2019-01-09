@@ -1,13 +1,13 @@
 import React from 'react';
 import {HashRouter,Route,Link,Switch} from 'react-router-dom';
-import About from './views/About.js';
-import App from './App.js';
-import Contact from './views/Contact.js';
-import Home from './views/Home.js';
-import Portfolio from './views/Portfolio.js';
-import Skills from './views/Skills.js';
+import About from './About.js';
+//import App from '../App.js';
+import Contact from './Contact.js';
+import Home from './Home.js';
+import Portfolio from './Portfolio.js';
+import Skills from './Skills.js';
 
-export default(
+export default() => (
   //<Route path='/' component={App}>
     //<IndexRoute component={Home} />
     //<Route path='About' component={About} />

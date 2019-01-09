@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter,Route,Link,Switch} from 'react-router-dom';
+import {HashRouter,Route,Switch} from 'react-router-dom';
 import About from './About.js';
 import Contact from './Contact.js';
 import Home from './Home.js';
@@ -11,6 +11,7 @@ export default() => (
     <Switch>
       <Route exact path='/About' component={About} />
       <Route exact path='/Contact' component={Contact} />
+      <Route exact path='/Home' component={Home} />
       <Route exact path='/Portfolio' component={Portfolio} />
       <Route exact path='/Skills' component={Skills} />
       <Route exact path='/' component={Home} />

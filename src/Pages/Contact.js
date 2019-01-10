@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import NavBar from '../components/NavBar.js';
+import '../stylesheets/main.css'
+import '../stylesheets/normalize.css'
 
 class Contact extends Component{
   render(){
     return(
       <div id='contact'>
-        this is the contact page
+        <NavBar/>
       </div>
     );
   }

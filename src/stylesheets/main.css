@@ -1,0 +1,173 @@
+body{
+  background: #252627;
+  overflow: hidden;
+  display: block;
+}
+
+.page{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#navbar{
+  background: #181818;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top:0;
+  z-index: 3;
+  min-height: 500px;
+}
+
+#navbar p#AngryThundrWafl{
+  transform: rotate(90deg);
+}
+
+.navbar-brand{
+  text-decoration: none;
+  background: #070707;
+  display: block;
+  padding: 8px 0;
+  height: 12%;
+}
+
+.navbar-brand a{
+  display: block;
+  margin: 8px auto;
+  width: 24px;
+  height: auto;
+}
+
+.navbar-brand:visited{
+  text-decoration: none;
+  color: white;
+}
+
+#navbar #nav{
+  display: block;
+  text-align: center;
+  position: absolute;
+  height: 210px;
+  top:50%;
+  margin-top: -120px;
+  width: 100%;
+}
+
+#navbar #nav a{
+  font-size: 22px;
+  color: #4d4d4e;
+  display: block;
+  line-height: 51px;
+  height: 51px;
+  position: relative;
+  text-decoration: none;
+}
+
+#icon-home:before {
+    content: "\e900";
+    font-size: 17px;
+}
+#icon-about:before {
+    content: "\e901";
+}
+#icon-contact:before {
+    content: "\e902";
+    font-size: 18px;
+}
+#icon-portfolio:before {
+    content: "\e903";
+}
+#icon-skills:before {
+    content: "\e904";
+}
+
+#navbar #nav a svg {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+
+#navbar #nav a:hover svg {
+    opacity: 0;
+}
+
+#navbar #nav a:hover:after{
+    opacity: 1;
+}
+
+#navbar #nav a.active,
+#navbar #nav a:hover {
+    color:#08fdd8;
+}
+#navbar #nav a:after {
+    content: '';
+    font-size: 9px;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#navbar #nav a:first-child:after {
+    content: 'HOME';
+}
+#navbar #nav a:first-child + a:after {
+    content: 'ABOUT';
+}
+#navbar #nav a:first-child + a +  a:after {
+    content: 'CONTACT';
+}
+#navbar #nav a:first-child + a + a + a:after {
+    content: 'MY WORK';
+}
+#navbar #nav a:first-child + a + a + a + a:after {
+    content: 'SKILLS';
+}
+
+#navbar ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+#navbar ul li a {
+    padding: 7px 0;
+    display: block;
+    font-size: 15px;
+    line-height: 16px;
+    color: #4d4d4e;
+}
+
+#navbar ul li a:hover {
+    color:#08fdd8;
+}
